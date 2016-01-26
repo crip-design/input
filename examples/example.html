@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fieldset-input example</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/fieldset-input.css">
+    <style>
+        body, input {
+            background-color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 400;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        form {
+            margin: 39px auto 39px auto;
+            background-color: #f2f2f2;
+            width: 420px;
+            height: 580px;
+            padding: 19px 19px;
+
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+    </style>
+</head>
+<body>
+
+<h1>Fieldset Input demo.</h1>
+<form role="form">
+    <div class="form-group fieldset">
+        <label class="control-label" for="test">Simple</label>
+        <input type="text" class="form-control" id="test">
+    </div>
+
+    <div class="form-group fieldset has-warning">
+        <label class="control-label" for="test2">Warning</label>
+        <input type="text" class="form-control" id="test2">
+    </div>
+
+    <div class="form-group fieldset has-success">
+        <label class="control-label" for="test3">Success</label>
+        <input type="text" class="form-control" id="test3">
+    </div>
+
+    <div class="form-group fieldset has-error">
+        <label class="control-label" for="test4">Danger</label>
+        <input type="text" class="form-control" id="test4">
+    </div>
+
+    <div ng-app="script.fieldset-input">
+
+        <div class="form-group" fieldset-input>
+            <label class="control-label" for="test5">Angular directive input</label>
+            <input type="text" class="form-control" id="test5">
+        </div>
+
+    </div>
+
+</form>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="../dist/fieldset-input.min.js"></script>
+<script src="../dist/fieldset-input.angular.min.js"></script>
+<script>
+    (function ($) {
+        $('.form-group.fieldset').fieldsetInput();
+    })(jQuery);
+</script>4
+</body>
+</html>

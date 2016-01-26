@@ -1,0 +1,132 @@
+.form-group.fieldset {
+  position: relative;
+  margin: $fieldset-margin;
+
+  &.has-content {
+    .control-label, label {
+      // get position depending on border width
+      top: $fieldset-input-label-active-top + ceil($fieldset-input-border-width * .5);
+      left: $fieldset-input-label-active-left;
+      background-color: $fieldset-input-border-color;
+      color: $fieldset-input-label-active-color !important;
+      padding: $fieldset-input-label-active-padding;
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      transition: none;
+    }
+
+    .form-control {
+      transition: none;
+    }
+
+    .hidden {
+      opacity: 1;
+    }
+  }
+
+  &.focused {
+    .control-label, label {
+      // get position depending on border width
+      top: $fieldset-input-label-active-top + ceil($fieldset-input-active-border-width * .5);
+      left: $fieldset-input-label-active-left;
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      background-color: $fieldset-input-border-active-color;
+      color: $fieldset-input-label-active-color !important;
+      padding: $fieldset-input-label-active-padding;
+    }
+
+    .form-control {
+      border: $fieldset-input-active-border-width solid $fieldset-input-border-active-color;
+    }
+  }
+
+  &.has-success {
+    &.has-content, &.focused {
+      .control-label, label {
+        background-color: $fieldset-input-success;
+      }
+    }
+    .control-label, label {
+      color: $fieldset-input-success;
+    }
+    .form-control {
+      border-color: $fieldset-input-success;
+    }
+  }
+
+  &.has-warning {
+    &.has-content, &.focused {
+      .control-label, label {
+        background-color: $fieldset-input-warning;
+      }
+    }
+    .control-label, label {
+      color: $fieldset-input-warning;
+    }
+    .form-control {
+      border-color: $fieldset-input-warning;
+    }
+  }
+
+  &.has-error {
+    &.has-content, &.focused {
+      .control-label, label {
+        background-color: $fieldset-input-danger;
+      }
+    }
+    .control-label, label {
+      color: $fieldset-input-danger;
+    }
+    .form-control {
+      border-color: $fieldset-input-danger;
+    }
+  }
+
+  .control-label, label {
+
+    top: $fieldset-input-label-top;
+    left: $font-size-large;
+    border: none;
+    max-width: 100%;
+    position: absolute;
+    display: inline-block;
+    cursor: text;
+    outline: 0;
+    margin: 0;
+    font-weight: 100;
+    font-size: $font-size-large;
+    line-height: $line-height-base;
+    color: $fieldset-input-placeholder-color;
+    padding: 0;
+    opacity: 1;
+
+    transition-property: all;
+    transition-duration: .15s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .form-control {
+    transition-property: all;
+    transition-duration: .15s;
+    transition-timing-function: ease-in-out;
+
+    color: $fieldset-text-color;
+    height: $fieldset-height;
+    background-color: $fieldset-input-background-color;
+    border: $fieldset-input-border;
+    padding: ceil($font-size-base / 2) $font-size-base;
+    display: block;
+    width: 100%;
+    font-size: $font-size-base;
+    background-image: none;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  .hidden {
+    display: block !important;
+    opacity: 0;
+  }
+}

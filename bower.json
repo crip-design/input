@@ -1,0 +1,30 @@
+{
+  "name": "crip-input",
+  "version": "1.0.0",
+  "description": "Microplugin for beautiful inputs",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/crip-design/input.git"
+  },
+  "authors": [
+    "Igors Krasjukovs <tahq69@gmail.com> (https://github.com/tahq69)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "jquery",
+    "bootstrap",
+    "input",
+    "forms"
+  ],
+  "moduleType": [],
+  "homepage": "https://github.com/crip-design/input",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

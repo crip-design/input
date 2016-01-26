@@ -1,0 +1,40 @@
+{
+  "name": "fieldset-input",
+  "version": "1.0.7",
+  "description": "Microplugin for beutiful inputs",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tahq69/fieldset-input.git"
+  },
+  "authors": [
+    "Igors Krasjukovs <tahq69@gmail.com> (https://github.com/tahq69)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "jquery",
+    "bootstrap",
+    "input",
+    "forms"
+  ],
+  "moduleType": [],
+  "homepage": "https://github.com/tahq69/fieldset-input",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.0.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.7",
+    "commit": "692e4da3d001fd94b76273d643c2ac067e52b3cf"
+  },
+  "_source": "git://github.com/tahq69/fieldset-input.git",
+  "_target": "~1.0.7",
+  "_originalSource": "fieldset-input",
+  "_direct": true
+}
