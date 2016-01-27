@@ -1,55 +1,55 @@
 $font-size-base: 14px !default;
 $line-height-base: 1.16 !default;
-$fieldset-text-color: #212121 !default;
+$crip-text-color: #212121 !default;
 $font-size-large: ceil(($font-size-base * 1.25)) !default;
 
-$fieldset-margin: 0 0 19px 0 !default;
-$fieldset-height: ceil(($font-size-base * 3.33)) !default;
+$crip-margin: 0 0 19px 0 !default;
+$crip-height: ceil(($font-size-base * 3.33)) !default;
 
-$fieldset-input-background-color: #ffffff !default;
+$crip-input-background-color: #ffffff !default;
 $brand-primary: null !default;
 @if $brand-primary == null {
-  $fieldset-input-border-active-color: #2873c4 !default;
+  $crip-input-border-active-color: #2873c4 !default;
 } @else {
-  $fieldset-input-border-active-color: $brand-primary !default;
+  $crip-input-border-active-color: $brand-primary !default;
 }
 
 // Try get variable from bootstrap or set our one;
 $brand-success: null !default;
 @if $brand-success == null {
-  $fieldset-input-success: #5cb85c !default;
+  $crip-input-success: #5cb85c !default;
 } @else {
-  $fieldset-input-success: $brand-success !default;
+  $crip-input-success: $brand-success !default;
 }
 
 $brand-warning: null !default;
 @if $brand-warning == null {
-  $fieldset-input-warning: #f0ad4e !default;
+  $crip-input-warning: #f0ad4e !default;
 } @else {
-  $fieldset-input-warning: $brand-warning !default;
+  $crip-input-warning: $brand-warning !default;
 }
 
 $brand-danger: null !default;
 @if $brand-danger == null {
-  $fieldset-input-danger: #d9534f !default;
+  $crip-input-danger: #d9534f !default;
 } @else {
-  $fieldset-input-danger: $brand-danger !default;
+  $crip-input-danger: $brand-danger !default;
 }
 
-$fieldset-input-placeholder-color: #cccccc !default;
-$fieldset-input-border-color: $fieldset-input-placeholder-color !default;
-$fieldset-input-border-width: 1px !default;
-$fieldset-input-border: $fieldset-input-border-width solid $fieldset-input-border-color !default;
-$fieldset-input-active-border-width: 2px !default;
+$crip-input-placeholder-color: #cccccc !default;
+$crip-input-border-color: $crip-input-placeholder-color !default;
+$crip-input-border-width: 1px !default;
+$crip-input-border: $crip-input-border-width solid $crip-input-border-color !default;
+$crip-input-active-border-width: 2px !default;
 
-$fieldset-input-label-active-color: #ffffff !default;
-$fieldset-input-label-active-padding-top: ceil(($font-size-base/4)) !default;
+$crip-input-label-active-color: #ffffff !default;
+$crip-input-label-active-padding-top: ceil(($font-size-base/4)) !default;
 // to set in center use half of input height - half of large font height with line height
-$fieldset-input-label-top: ceil(($fieldset-height * .5) - ($font-size-large * $line-height-base * .5)) !default;
-$fieldset-input-label-active-padding-left: ceil(($font-size-base*.714)) !default;
+$crip-input-label-top: ceil(($crip-height * .5) - ($font-size-large * $line-height-base * .5)) !default;
+$crip-input-label-active-padding-left: ceil(($font-size-base*.714)) !default;
 // gives correct vertical font animation
-$fieldset-input-label-active-left: $font-size-large - $fieldset-input-label-active-padding-left !default;
-$fieldset-input-label-active-padding: $fieldset-input-label-active-padding-top $fieldset-input-label-active-padding-left !default;
+$crip-input-label-active-left: $font-size-large - $crip-input-label-active-padding-left !default;
+$crip-input-label-active-padding: $crip-input-label-active-padding-top $crip-input-label-active-padding-left !default;
 // position depends on label padding top and half of font size with line height
-$fieldset-input-label-active-top: ceil(($fieldset-input-label-active-padding-top + ($font-size-base * $line-height-base * .5)) * -1) !default;
+$crip-input-label-active-top: ceil(($crip-input-label-active-padding-top + ($font-size-base * $line-height-base * .5)) * -1) !default;
 ;

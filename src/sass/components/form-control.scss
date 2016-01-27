@@ -1,15 +1,15 @@
-.form-group.fieldset {
+.form-group.crip {
   position: relative;
-  margin: $fieldset-margin;
+  margin: $crip-margin;
 
   &.has-content {
     .control-label, label {
       // get position depending on border width
-      top: $fieldset-input-label-active-top + ceil($fieldset-input-border-width * .5);
-      left: $fieldset-input-label-active-left;
-      background-color: $fieldset-input-border-color;
-      color: $fieldset-input-label-active-color !important;
-      padding: $fieldset-input-label-active-padding;
+      top: $crip-input-label-active-top + ceil($crip-input-border-width * .5);
+      left: $crip-input-label-active-left;
+      background-color: $crip-input-border-color;
+      color: $crip-input-label-active-color !important;
+      padding: $crip-input-label-active-padding;
       font-size: $font-size-base;
       line-height: $line-height-base;
       transition: none;
@@ -27,65 +27,65 @@
   &.focused {
     .control-label, label {
       // get position depending on border width
-      top: $fieldset-input-label-active-top + ceil($fieldset-input-active-border-width * .5);
-      left: $fieldset-input-label-active-left;
+      top: $crip-input-label-active-top + ceil($crip-input-active-border-width * .5);
+      left: $crip-input-label-active-left;
       font-size: $font-size-base;
       line-height: $line-height-base;
-      background-color: $fieldset-input-border-active-color;
-      color: $fieldset-input-label-active-color !important;
-      padding: $fieldset-input-label-active-padding;
+      background-color: $crip-input-border-active-color;
+      color: $crip-input-label-active-color !important;
+      padding: $crip-input-label-active-padding;
     }
 
     .form-control {
-      border: $fieldset-input-active-border-width solid $fieldset-input-border-active-color;
+      border: $crip-input-active-border-width solid $crip-input-border-active-color;
     }
   }
 
   &.has-success {
     &.has-content, &.focused {
       .control-label, label {
-        background-color: $fieldset-input-success;
+        background-color: $crip-input-success;
       }
     }
     .control-label, label {
-      color: $fieldset-input-success;
+      color: $crip-input-success;
     }
     .form-control {
-      border-color: $fieldset-input-success;
+      border-color: $crip-input-success;
     }
   }
 
   &.has-warning {
     &.has-content, &.focused {
       .control-label, label {
-        background-color: $fieldset-input-warning;
+        background-color: $crip-input-warning;
       }
     }
     .control-label, label {
-      color: $fieldset-input-warning;
+      color: $crip-input-warning;
     }
     .form-control {
-      border-color: $fieldset-input-warning;
+      border-color: $crip-input-warning;
     }
   }
 
   &.has-error {
     &.has-content, &.focused {
       .control-label, label {
-        background-color: $fieldset-input-danger;
+        background-color: $crip-input-danger;
       }
     }
     .control-label, label {
-      color: $fieldset-input-danger;
+      color: $crip-input-danger;
     }
     .form-control {
-      border-color: $fieldset-input-danger;
+      border-color: $crip-input-danger;
     }
   }
 
   .control-label, label {
 
-    top: $fieldset-input-label-top;
+    top: $crip-input-label-top;
     left: $font-size-large;
     border: none;
     max-width: 100%;
@@ -97,7 +97,7 @@
     font-weight: 100;
     font-size: $font-size-large;
     line-height: $line-height-base;
-    color: $fieldset-input-placeholder-color;
+    color: $crip-input-placeholder-color;
     padding: 0;
     opacity: 1;
 
@@ -111,10 +111,10 @@
     transition-duration: .15s;
     transition-timing-function: ease-in-out;
 
-    color: $fieldset-text-color;
-    height: $fieldset-height;
-    background-color: $fieldset-input-background-color;
-    border: $fieldset-input-border;
+    color: $crip-text-color;
+    height: $crip-height;
+    background-color: $crip-input-background-color;
+    border: $crip-input-border;
     padding: ceil($font-size-base / 2) $font-size-base;
     display: block;
     width: 100%;

@@ -1,17 +1,17 @@
-(function (script, ng) {
+(function (ng, crip) {
     'use strict';
 
-    script.fieldsetInput
-        .directive('fieldsetInput', fieldsetInput);
+    crip.input
+        .directive('cripInput', cripInput);
 
-    fieldsetInput.$inject = ['$timeout'];
+    cripInput.$inject = ['$timeout'];
 
-    function fieldsetInput($timeout) {
+    function cripInput($timeout) {
         return {
             restrict: 'EA',
             scope: {
                 settings: '=',
-                fieldsetInput: '='
+                cripInput: '='
             },
             replace: false,
             transclude: false,
@@ -23,18 +23,18 @@
                 labelVisible: true
             }, scope.settings);
 
-            element.addClass('fieldset');
+            element.addClass('crip');
 
             var formControl = element.find('.form-control'),
                 controlLabel = element.find('.control-label');
 
-            scope.$watch('fieldsetInput', checkVal);
+            scope.$watch('cripInput', checkVal);
 
             $timeout(function () {
                 // in case of autocomplete check model value with input value
                 // if they are different, update model value
-                if (scope.fieldsetInput !== formControl.val())
-                    scope.fieldsetInput = formControl.val();
+                if (scope.cripInput !== formControl.val())
+                    scope.cripInput = formControl.val();
 
                 // we cant find out password value, so this type inputs
                 // cant be detectet on autocomplete.
@@ -59,7 +59,7 @@
             }
 
             function checkVal(force) {
-                var hasValue = !isEmpty(scope.fieldsetInput);
+                var hasValue = !isEmpty(scope.cripInput);
                 if (hasValue || force) {
                     controlLabel.addClass('hidden');
 
@@ -74,4 +74,4 @@
             }
         }
     }
-})(window.script, angular);
+})(angular, window.crip || (window.crip = {}));

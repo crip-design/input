@@ -16,7 +16,7 @@ crip.scriptsConfig({
 
 crip.scripts(
     'app.js',
-    'fieldset-input',
+    'crip-input',
     'compile-app'
 );
 
@@ -29,6 +29,6 @@ crip.scripts([
 );
 
 gulp.task('default', function () {
-    crip.gulp.start('crip-default'); // run all regitered task
+    crip.gulp.start('crip-default'); // run all required task
     crip.watch();
 });

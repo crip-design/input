@@ -1,5 +1,5 @@
-(function (ng, script) {
+(function (ng, crip) {
     'use strict';
 
-    script.fieldsetInput = ng.module('script.fieldset-input', []);
-})(angular, window.script || (window.script = {}));
+    crip.input = ng.module('crip.input', []);
+})(angular, window.crip || (window.crip = {}));

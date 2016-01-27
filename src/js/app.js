@@ -1,7 +1,7 @@
 (function (d, $) {
     'use strict';
 
-    $.fn.fieldsetInput = function (options) {
+    $.fn.cripInput = function (options) {
         // This is the easiest way to have default options.
         var settings = $.extend({
             labelVisible: true
